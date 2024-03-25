@@ -61,24 +61,26 @@ public class Sketch extends PApplet {
     }
 
 
-      // flower 
-      // flower petal 
-      fill(204, 90, 90);
-      ellipse((float) (width*.75), (float) (height*.75), (float) (width/2.5), height/16);
-      ellipse((float) (width*.75), (float) (height*.75), width/16, (float) (height/2.5));
-     
-      for (int i = 0; i < 2; i++); {
+     // flower
+     // flower petal
+     fill(204, 90, 90);
 
-        fill(184 , 97, 143);
-          ellipse((float) (width*.75), (float) (height*.75), (float) (width/2.5), height/16);
-          ellipse((float) (width*.75), (float) (height*.75), width/16, (float) (height/2.5));
 
-      }
+     pushMatrix();
+     translate(300, 300);
     
+     for (int i = 1; i < 5; i++) {
+       rotate(QUARTER_PI);
+       fill(208,152,214);
+       ellipse(0, 0, width/3, height/10);
+     }
      
-      //yellow flower pollen
-      fill(255, 254, 168);
-      ellipse((float) (width*.75), (float) (height*.75), width/8, height/8);
+     popMatrix();
+   
+     //yellow flower pollen
+     fill(255, 254, 168);
+     ellipse((float) (width*.75), (float) (height*.75), width/8, height/8);
+
      
 
     
